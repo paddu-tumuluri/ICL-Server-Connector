@@ -48,6 +48,8 @@ A Python-based GUI application for configuring and executing Broadband Forum tel
 
 # Packaging the Application (Windows Executable)
 pyinstaller --onefile --windowed --add-data "sparnex-logo.jpg;." --hidden-import=tkinter --hidden-import=openpyxl --hidden-import=pandas --hidden-import=ttkbootstrap --collect-all ttkbootstrap ServerConnector_Stable.py  
+# To force clean version and avoid any cached analysis
+pyinstaller --clean --onefile --windowed --add-data "sparnex-logo.jpg;." --hidden-import=tkinter --hidden-import=openpyxl --hidden-import=pandas --hidden-import=ttkbootstrap --collect-all ttkbootstrap ServerConnector_Stable.py
 
 # Setup
 git clone https://github.com/paddu-tumuluri/ICL-Server-Connector.git
@@ -56,5 +58,5 @@ python main.py
 
 # Author
 Padmini Tumuluri
-R&D Engineer | Python Developer | QA Automation Specialist
+R&D Engineer | Python Developer | Test Automation Engineer
 LinkedIn Profile https://www.linkedin.com/in/padmini-tumuluri-963133121/
